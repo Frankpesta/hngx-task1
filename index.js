@@ -10,8 +10,8 @@ app.get('/api', (req, res) => {
     const github_repo_url = 'https://github.com/Frankpesta/hngx-task1';
     const github_file_url = 'https://github.com/Frankpesta/hngx-task1/blob/main/index.js';
   
-    const utc_time = new Date().toUTCString();
-    // const utc_time = new Date(CutcTime).toISOString();
+    const utc_time = new Date().toISOString();
+    console.log(utc_time)
   
     res.status(200).json({
       slack_name,
